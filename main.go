@@ -182,6 +182,7 @@ func handleMessage(w http.ResponseWriter, r *http.Request) {
 				"uuid":        strings.ToUpper(uuidText),
 				"frame_type":  fmt.Sprintf("0x%02X", frameType),
 			},
+			BackendID: in.MessageID,
 		}
 		if rssiVal != nil {
 			evt.Data["rssi"] = rssiVal

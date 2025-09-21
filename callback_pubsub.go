@@ -18,6 +18,7 @@ type CallbackEvent struct {
 	Timestamp int64          `json:"timestamp"`
 	GatewayID string         `json:"gateway_id,omitempty"`
 	Data      map[string]any `json:"data,omitempty"`
+	BackendID int64
 }
 
 var (
